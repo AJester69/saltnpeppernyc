@@ -254,6 +254,10 @@ select {
   align-content: center;
 }
 
+.hero__inner {
+  align-items: center;
+}
+
 .hero h1,
 .story h2,
 .section-heading h2,
@@ -377,22 +381,25 @@ select {
 
 .hero__visual {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   align-content: center;
+  justify-items: end;
 }
 
 .hero__art {
   position: relative;
   display: grid;
-  place-items: center;
-  min-height: 34rem;
-  padding: 1.5rem 1rem 0;
-  overflow: hidden;
+  align-items: end;
+  justify-items: center;
+  width: min(100%, 38rem);
+  min-height: 29rem;
+  padding: 1rem 0 0;
+  overflow: visible;
 }
 
 .hero__art-glow {
   position: absolute;
-  inset: 16% 10% 8% 10%;
+  inset: 12% 6% 2% 6%;
   border-radius: 50%;
   background:
     radial-gradient(circle, rgba(139, 41, 18, 0.55), rgba(139, 41, 18, 0.16) 34%, transparent 68%);
@@ -402,9 +409,12 @@ select {
 .hero__art-image {
   position: relative;
   z-index: 1;
-  width: min(100%, 34rem);
+  width: auto;
+  max-width: min(100%, 32rem);
+  max-height: 31rem;
   height: auto;
   object-fit: contain;
+  object-position: center bottom;
   filter: drop-shadow(0 28px 70px rgba(0, 0, 0, 0.4));
 }
 
@@ -413,8 +423,9 @@ select {
   display: grid;
   align-content: start;
   gap: 1.1rem;
+  width: min(100%, 35rem);
   min-height: 100%;
-  padding: 1.8rem;
+  padding: 9.5rem 1.6rem 1.6rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-xl);
   background:
@@ -427,13 +438,14 @@ select {
 }
 
 .hero__panel-art {
-  justify-self: center;
-  width: min(100%, 18rem);
+  position: absolute;
+  top: -2.1rem;
+  right: 1rem;
+  width: min(72%, 17rem);
   height: auto;
-  margin-top: -0.35rem;
-  margin-bottom: 0.25rem;
   object-fit: contain;
   filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.3));
+  pointer-events: none;
 }
 
 .hero__panel-grid {
@@ -716,7 +728,8 @@ select {
   }
 
   .hero__art {
-    min-height: 28rem;
+    min-height: 25rem;
+    justify-self: center;
   }
 
   .experience-cards,
@@ -760,12 +773,13 @@ select {
   }
 
   .hero__art {
-    min-height: 23rem;
-    padding-top: 0.5rem;
+    min-height: 21rem;
+    padding-top: 0.25rem;
   }
 
   .hero__panel {
-    padding: 1.4rem;
+    width: 100%;
+    padding: 8.25rem 1.4rem 1.4rem;
   }
 
   .hero__metrics,
@@ -812,11 +826,12 @@ select {
   }
 
   .hero__art {
-    min-height: 18rem;
+    min-height: 17rem;
   }
 
   .hero__panel-art {
-    width: min(100%, 14rem);
+    top: -1.2rem;
+    width: min(78%, 14rem);
   }
 
   .button,
