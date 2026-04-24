@@ -252,10 +252,19 @@ select {
 
 .hero__content {
   align-content: center;
+  max-width: 42rem;
 }
 
 .hero__inner {
   align-items: center;
+}
+
+.hero h1 {
+  max-width: 8.2ch;
+}
+
+.hero__copy {
+  max-width: 36rem;
 }
 
 .hero h1,
@@ -335,11 +344,38 @@ select {
   background: linear-gradient(90deg, var(--gold), transparent);
 }
 
-.hero__metrics {
+.hero__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem 1.5rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__fact {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 0.75rem;
+  gap: 0.3rem;
+  min-width: 11rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero__fact span {
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero__fact strong,
+.hero__fact strong a {
+  color: var(--text);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.45rem;
+  line-height: 1.05;
+  font-weight: 600;
 }
 
 .metric-card,
@@ -380,10 +416,9 @@ select {
 }
 
 .hero__visual {
-  display: grid;
-  gap: 1.5rem;
-  align-content: center;
-  justify-items: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__art {
@@ -391,15 +426,15 @@ select {
   display: grid;
   align-items: end;
   justify-items: center;
-  width: min(100%, 38rem);
-  min-height: 29rem;
-  padding: 1rem 0 0;
+  width: min(100%, 34rem);
+  min-height: 32rem;
+  padding: 0;
   overflow: visible;
 }
 
 .hero__art-glow {
   position: absolute;
-  inset: 12% 6% 2% 6%;
+  inset: 16% 10% 6% 10%;
   border-radius: 50%;
   background:
     radial-gradient(circle, rgba(139, 41, 18, 0.55), rgba(139, 41, 18, 0.16) 34%, transparent 68%);
@@ -410,77 +445,12 @@ select {
   position: relative;
   z-index: 1;
   width: auto;
-  max-width: min(100%, 32rem);
-  max-height: 31rem;
+  max-width: min(100%, 30rem);
+  max-height: 28rem;
   height: auto;
   object-fit: contain;
   object-position: center bottom;
   filter: drop-shadow(0 28px 70px rgba(0, 0, 0, 0.4));
-}
-
-.hero__panel {
-  position: relative;
-  display: grid;
-  align-content: start;
-  gap: 1.1rem;
-  width: min(100%, 35rem);
-  min-height: 100%;
-  padding: 9.5rem 1.6rem 1.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-xl);
-  background:
-    radial-gradient(circle at top right, rgba(139, 41, 18, 0.4), transparent 30%),
-    radial-gradient(circle at 12% 18%, rgba(200, 161, 106, 0.12), transparent 22%),
-    linear-gradient(155deg, rgba(255, 255, 255, 0.05), transparent 34%),
-    linear-gradient(180deg, rgba(20, 14, 14, 0.95), rgba(8, 7, 7, 0.98));
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.hero__panel-art {
-  position: absolute;
-  top: -2.1rem;
-  right: 1rem;
-  width: min(72%, 17rem);
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.3));
-  pointer-events: none;
-}
-
-.hero__panel-grid {
-  display: grid;
-  gap: 0.9rem;
-}
-
-.hero__panel-item {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-bottom: 0.9rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.hero__panel-item:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.hero__panel-item span {
-  color: var(--muted);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.hero__panel-item strong {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.55rem;
-  line-height: 1;
-  font-weight: 600;
-  color: var(--gold-strong);
 }
 
 .story__panel,
@@ -728,7 +698,7 @@ select {
   }
 
   .hero__art {
-    min-height: 25rem;
+    min-height: 24rem;
     justify-self: center;
   }
 
@@ -773,20 +743,19 @@ select {
   }
 
   .hero__art {
-    min-height: 21rem;
-    padding-top: 0.25rem;
+    min-height: 20rem;
   }
 
-  .hero__panel {
-    width: 100%;
-    padding: 8.25rem 1.4rem 1.4rem;
-  }
-
-  .hero__metrics,
+  .hero__facts,
   .experience-cards,
   .signature-grid,
   .menu-board__grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero__facts {
+    display: grid;
+    gap: 0.8rem;
   }
 
   .site-footer__inner,
@@ -820,18 +789,8 @@ select {
     align-items: stretch;
   }
 
-  .hero__panel-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .hero__art {
     min-height: 17rem;
-  }
-
-  .hero__panel-art {
-    top: -1.2rem;
-    width: min(78%, 14rem);
   }
 
   .button,
