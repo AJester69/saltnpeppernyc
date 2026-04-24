@@ -375,6 +375,39 @@ select {
   color: var(--muted);
 }
 
+.hero__visual {
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+}
+
+.hero__art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 34rem;
+  padding: 1.5rem 1rem 0;
+  overflow: hidden;
+}
+
+.hero__art-glow {
+  position: absolute;
+  inset: 16% 10% 8% 10%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(139, 41, 18, 0.55), rgba(139, 41, 18, 0.16) 34%, transparent 68%);
+  filter: blur(14px);
+}
+
+.hero__art-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 34rem);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 28px 70px rgba(0, 0, 0, 0.4));
+}
+
 .hero__panel {
   position: relative;
   display: grid;
@@ -393,55 +426,19 @@ select {
   overflow: hidden;
 }
 
-.hero__panel::before {
-  content: "SALT N PEPPER";
-  position: absolute;
-  right: -2.4rem;
-  bottom: 1.4rem;
-  color: rgba(255, 255, 255, 0.04);
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(3.6rem, 8vw, 6rem);
-  line-height: 0.82;
-  letter-spacing: 0.08em;
-  pointer-events: none;
-}
-
-.hero__panel-kicker {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  padding: 0.55rem 0.8rem;
-  border: 1px solid rgba(200, 161, 106, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--gold);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.hero__panel-title {
-  margin: 0;
-  max-width: 12ch;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2.2rem, 4.4vw, 3.9rem);
-  line-height: 0.98;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.hero__panel-copy {
-  margin: 0;
-  max-width: 44ch;
-  color: var(--muted);
-  line-height: 1.8;
+.hero__panel-art {
+  justify-self: center;
+  width: min(100%, 18rem);
+  height: auto;
+  margin-top: -0.35rem;
+  margin-bottom: 0.25rem;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.3));
 }
 
 .hero__panel-grid {
   display: grid;
   gap: 0.9rem;
-  margin-top: 0.2rem;
 }
 
 .hero__panel-item {
@@ -718,6 +715,10 @@ select {
     min-height: auto;
   }
 
+  .hero__art {
+    min-height: 28rem;
+  }
+
   .experience-cards,
   .signature-grid,
   .menu-board__grid {
@@ -758,13 +759,13 @@ select {
     font-size: clamp(2.7rem, 10vw, 4.6rem);
   }
 
-  .hero__panel {
-    padding: 1.4rem;
+  .hero__art {
+    min-height: 23rem;
+    padding-top: 0.5rem;
   }
 
-  .hero__panel::before {
-    right: -1.3rem;
-    bottom: 1rem;
+  .hero__panel {
+    padding: 1.4rem;
   }
 
   .hero__metrics,
@@ -805,13 +806,17 @@ select {
     align-items: stretch;
   }
 
-  .hero__panel-title {
-    max-width: none;
-  }
-
   .hero__panel-item {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero__art {
+    min-height: 18rem;
+  }
+
+  .hero__panel-art {
+    width: min(100%, 14rem);
   }
 
   .button,
