@@ -459,18 +459,24 @@ select {
   border-radius: var(--radius-lg);
 }
 
-.story__quote {
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.08;
-  color: var(--text);
+.story__panel {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.story__panel-art {
+  justify-self: center;
+  width: min(100%, 22rem);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 38px rgba(0, 0, 0, 0.35));
 }
 
 .story__list {
   display: grid;
   gap: 0.95rem;
-  margin: 1.35rem 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -762,6 +768,10 @@ select {
   .site-footer__bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .story__panel-art {
+    width: min(100%, 18rem);
   }
 }
 
