@@ -1,0 +1,8 @@
+{
+  "name": "saltnpeppernyc-website",
+  "private": true,
+  "scripts": {
+    "dev": "node preview-server.js",
+    "preview": "node preview-server.js"
+  }
+}
