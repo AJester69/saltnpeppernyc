@@ -3,56 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Salt n Pepper NYC | Fried Chicken, Burgers, and Late-Night Fast Food</title>
-  <meta name="description" content="Salt n Pepper is an NYC fast food concept serving crispy fried chicken, burgers, rice bowls, wraps, wings, and late-night favorites.">
+  <title>Salt n Pepper NYC | Premium Burgers, Hot Chicken, and Late-Night Dining</title>
+  <meta name="description" content="Salt n Pepper is a premium NYC burger and hot chicken concept with a darker late-night feel, halal-friendly menu direction, and a polished dining atmosphere.">
   <meta property="og:title" content="Salt n Pepper NYC">
-  <meta property="og:description" content="Crispy chicken. Stacked burgers. Big city energy.">
+  <meta property="og:description" content="A richer late-night room for burgers, hot chicken, and slow heat.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://saltnpeppernyc.com/">
+  <meta property="og:image" content="https://saltnpeppernyc.com/images/pepper-royale.png">
   <link rel="canonical" href="https://saltnpeppernyc.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <p class="ticker" data-ticker>Late-night combos. Fast pickup. NYC fried chicken with real crunch.</p>
-      <a class="topbar__link" href="#order">Get opening updates</a>
-    </div>
-  </div>
-
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="#home" aria-label="Salt n Pepper home">
-        <span class="brand__mark">SNP</span>
+        <span class="brand__mark">S</span>
         <span class="brand__copy">
           <span class="brand__name">Salt n Pepper</span>
-          <span class="brand__meta">saltnpeppernyc.com</span>
+          <span class="brand__meta">New York City</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
         <span class="nav-toggle__bars" aria-hidden="true">
           <span></span>
           <span></span>
           <span></span>
         </span>
-        <span class="nav-toggle__label">Menu</span>
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#story">Story</a>
         <a href="#menu">Menu</a>
-        <a href="#board">Board</a>
-        <a href="#heat">Heat</a>
+        <a href="#experience">Experience</a>
         <a href="#visit">Visit</a>
-        <a href="#order">Order</a>
-        <a class="button button--ghost button--small" href="#story">NYC Vibe</a>
-        <a class="button button--small" href="#menu">See Combos</a>
       </nav>
     </div>
   </header>
@@ -61,479 +51,212 @@
     <section class="hero" id="home">
       <div class="container hero__inner">
         <div class="hero__content">
-          <p class="eyebrow">NYC fast food | halal chicken | burgers | late-night favorites</p>
-          <h1>Crispy chicken. Stacked burgers. Big city energy.</h1>
-          <p class="hero__copy">Salt n Pepper is a bold NYC chicken spot built for the lunch rush, the after-school stop, and the late-night order. Expect crunch, sauce, burgers, wings, rice bowls, and fast pickup.</p>
+          <p class="eyebrow">New York City / Halal kitchen direction / Open late</p>
+          <h1>A richer late-night room for burgers, hot chicken, and <span class="highlight">slow heat</span>.</h1>
+          <p class="hero__copy">Salt n Pepper turns neighborhood comfort food into something moodier, warmer, and more polished, with flame-finished burgers, crisp chicken, and a menu built for the dinner rush and the midnight crowd.</p>
 
           <div class="hero__actions">
-            <a class="button" href="#menu">Browse the menu</a>
-            <a class="button button--ghost" href="#order">Opening updates</a>
+            <a class="button" href="#menu">Explore the Menu</a>
+            <a class="text-link" href="#visit">Visit Salt n Pepper</a>
           </div>
 
-          <ul class="hero__list">
-            <li>Fresh fried chicken and tenders</li>
-            <li>Rice platters, wraps, gyros, and burgers</li>
-            <li>Big contrast, fast choices, and easy order flow</li>
+          <div class="hero__metrics" aria-label="Key highlights">
+            <article class="metric-card">
+              <strong>Until 2 AM</strong>
+              <span>Late-night kitchen energy</span>
+            </article>
+            <article class="metric-card">
+              <strong>House Pepper Glaze</strong>
+              <span>Warm spice with a clean finish</span>
+            </article>
+            <article class="metric-card">
+              <strong>NYC-first menu</strong>
+              <span>Built for dine-in, pickup, and the rush</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Signature dishes showcase">
+          <div class="hero-stage">
+            <div class="hero-stage__halo hero-stage__halo--one"></div>
+            <div class="hero-stage__halo hero-stage__halo--two"></div>
+
+            <article class="showcase showcase--main">
+              <img src="images/pepper-royale.png" alt="Salt n Pepper's signature Pepper Royale burger" loading="eager" fetchpriority="high">
+            </article>
+
+            <article class="showcase showcase--secondary">
+              <img src="images/hot-honey-sando.png" alt="Salt n Pepper's hot honey chicken sandwich" loading="lazy">
+            </article>
+
+            <article class="showcase showcase--accent">
+              <img src="images/saffron-fries.png" alt="Salt n Pepper's saffron fries" loading="lazy">
+            </article>
+
+            <div class="hero-chip hero-chip--upper">Pepper Royale / Signature Stack</div>
+            <div class="hero-chip hero-chip--lower">Hot honey / charcoal aioli / saffron salt</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="container story__inner">
+        <div class="story__content">
+          <p class="eyebrow">The Story</p>
+          <h2>Made to feel more like a warm midnight grill than a fast-food counter.</h2>
+          <p>Salt n Pepper is built around the idea that comfort food can still have presence. The room is darker, the details are more considered, and the menu leans into richer finishes: aged cheese, pepper glaze, hot honey, char, smoke, and heat that lingers in the right way.</p>
+          <p>Instead of stacking the homepage with promotions, the new direction keeps the layout quieter and more confident, with a sharper focus on atmosphere, signature dishes, and a stronger visual identity.</p>
+        </div>
+
+        <aside class="story__panel" aria-label="Brand details">
+          <p class="story__quote">"A premium comfort-food room with the appetite of a real NYC late-night spot."</p>
+
+          <ul class="story__list">
+            <li>Halal-friendly menu direction with burgers, chicken, fries, and shakes</li>
+            <li>Dark bronze palette, softer lighting, and fewer hard-sell prompts</li>
+            <li>Designed to feel elevated without losing the craveable fast-food edge</li>
           </ul>
-        </div>
-
-        <div class="hero__visual" aria-label="Featured menu highlights">
-          <article class="promo promo--primary">
-            <span class="promo__kicker">House special</span>
-            <h2>Signature Crunch Box</h2>
-            <p>4 crispy tenders, seasoned fries, comeback sauce, pickles, and a cold drink.</p>
-
-            <div class="promo__meta">
-              <span>Halal</span>
-              <span>Fast favorite</span>
-              <span>$12 starter</span>
-            </div>
-
-            <div class="spice-meter" aria-label="Pepper level sample">
-              <span class="spice-meter__label">Pepper level</span>
-              <div class="spice-meter__bars">
-                <span class="is-on"></span>
-                <span class="is-on"></span>
-                <span class="is-on"></span>
-                <span></span>
-              </div>
-            </div>
-          </article>
-
-          <div class="hero__mini-grid">
-            <article class="promo promo--dark">
-              <span class="promo__kicker">Late-night lane</span>
-              <h3>Mixed Over Rice</h3>
-              <p>Chicken, lamb, white sauce, green sauce, and city-size portions.</p>
-            </article>
-
-            <article class="promo promo--gold">
-              <span class="promo__kicker">Street snack</span>
-              <h3>Loaded Fries</h3>
-              <p>Seasoned fries with chopped tenders, hot honey, and pepper aioli.</p>
-            </article>
-
-            <article class="promo promo--outline">
-              <span class="promo__kicker">Build your heat</span>
-              <h3>Salt, black pepper, cayenne, or after hours hot.</h3>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="rush-strip" aria-label="Restaurant highlights">
-      <div class="container rush-strip__inner">
-        <span>Halal menu</span>
-        <span>Combo-heavy ordering</span>
-        <span>Pickup and delivery ready</span>
-        <span>Lunch rush to late night</span>
-      </div>
-    </section>
-
-    <section class="signature-section">
-      <div class="container">
-        <header class="section-heading">
-          <p class="eyebrow">Built around the favorites</p>
-          <h2>Chicken shop energy, late-night range, and easy choices.</h2>
-          <p>For the first pass, the site leans into bold promo blocks, clear combo pricing, and the kind of menu spread people expect from a strong NYC fast-food spot.</p>
-        </header>
-
-        <div class="signature-grid">
-          <article class="signature-card signature-card--red">
-            <span class="signature-card__label">01</span>
-            <h3>Crunch boxes</h3>
-            <p>Big value, clear pricing, and a lead offer right at the top of the page.</p>
-          </article>
-
-          <article class="signature-card signature-card--dark">
-            <span class="signature-card__label">02</span>
-            <h3>Rice, wraps, and gyros</h3>
-            <p>A wider neighborhood menu that feels familiar for lunch, dinner, and late-night orders.</p>
-          </article>
-
-          <article class="signature-card signature-card--gold">
-            <span class="signature-card__label">03</span>
-            <h3>Sauce and heat levels</h3>
-            <p>Flavor options stay front and center so the menu feels flexible and easy to personalize.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="menu-section" id="menu">
-      <div class="container">
-        <header class="section-heading">
-          <p class="eyebrow">Starter menu</p>
-          <h2>Big categories. Fast decisions.</h2>
-          <p>Tap through the categories to preview a first-pass Salt n Pepper menu. The pricing and item mix are set up to be easy to swap later.</p>
-        </header>
-
-        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-          <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-combos" id="tab-combos" data-menu-tab="combos">Combos</button>
-          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-chicken" id="tab-chicken" data-menu-tab="chicken">Chicken</button>
-          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-rice" id="tab-rice" data-menu-tab="rice">Rice and wraps</button>
-          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-sides" id="tab-sides" data-menu-tab="sides">Sides and shakes</button>
-        </div>
-
-        <div class="menu-panel is-active" id="panel-combos" role="tabpanel" aria-labelledby="tab-combos" data-menu-panel="combos">
-          <article class="menu-item">
-            <div>
-              <h3>Salt Box</h3>
-              <p>3 tenders, fries, comeback sauce, pickles, and a drink.</p>
-            </div>
-            <span class="menu-item__price">$12</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Pepper Stack Combo</h3>
-              <p>Crispy chicken sandwich, fries, and your heat level.</p>
-            </div>
-            <span class="menu-item__price">$13</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Double Crunch Combo</h3>
-              <p>2 chicken pieces, 2 tenders, biscuit, fries, and a drink.</p>
-            </div>
-            <span class="menu-item__price">$14</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Family Drop</h3>
-              <p>8 tenders, large fries, sauces, slaw, and 4 drinks.</p>
-            </div>
-            <span class="menu-item__price">$29</span>
-          </article>
-        </div>
-
-        <div class="menu-panel" id="panel-chicken" role="tabpanel" aria-labelledby="tab-chicken" data-menu-panel="chicken" hidden>
-          <article class="menu-item">
-            <div>
-              <h3>3 Pc Fried Chicken</h3>
-              <p>Classic crispy chicken with a biscuit and dipping sauce.</p>
-            </div>
-            <span class="menu-item__price">$9</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>5 Pc Tenders</h3>
-              <p>Juicy hand-breaded tenders with fries and pepper aioli.</p>
-            </div>
-            <span class="menu-item__price">$11</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Hot Honey Wings</h3>
-              <p>Crispy wings tossed in hot honey and cracked pepper.</p>
-            </div>
-            <span class="menu-item__price">$12</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Pepper Popcorn Chicken</h3>
-              <p>Snackable bites with house seasoning and ranch.</p>
-            </div>
-            <span class="menu-item__price">$7</span>
-          </article>
-        </div>
-
-        <div class="menu-panel" id="panel-rice" role="tabpanel" aria-labelledby="tab-rice" data-menu-panel="rice" hidden>
-          <article class="menu-item">
-            <div>
-              <h3>Chicken Over Rice</h3>
-              <p>Marinated chicken, yellow rice, salad, white sauce, and hot sauce.</p>
-            </div>
-            <span class="menu-item__price">$11</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Mixed Over Rice</h3>
-              <p>Chicken and lamb with white sauce, green sauce, and pickled veg.</p>
-            </div>
-            <span class="menu-item__price">$12</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Crispy Wrap</h3>
-              <p>Fried chicken, slaw, pickles, and pepper sauce in a grilled wrap.</p>
-            </div>
-            <span class="menu-item__price">$10</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Lamb Gyro</h3>
-              <p>Thin-sliced lamb, lettuce, tomato, onion, and white sauce.</p>
-            </div>
-            <span class="menu-item__price">$9</span>
-          </article>
-        </div>
-
-        <div class="menu-panel" id="panel-sides" role="tabpanel" aria-labelledby="tab-sides" data-menu-panel="sides" hidden>
-          <article class="menu-item">
-            <div>
-              <h3>Loaded Fries</h3>
-              <p>Seasoned fries topped with chopped tenders and sauce drizzle.</p>
-            </div>
-            <span class="menu-item__price">$7</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Mozz Sticks</h3>
-              <p>Crispy cheese pulls with marinara or pepper ranch.</p>
-            </div>
-            <span class="menu-item__price">$6</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Mac and Cheese</h3>
-              <p>Extra creamy with toasted pepper crumbs on top.</p>
-            </div>
-            <span class="menu-item__price">$5</span>
-          </article>
-
-          <article class="menu-item">
-            <div>
-              <h3>Cookies and Cream Shake</h3>
-              <p>Cold, thick, and made to cool down the hotter menu items.</p>
-            </div>
-            <span class="menu-item__price">$6</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="board-section" id="board">
-      <div class="container board-section__inner">
-        <div class="board-panel">
-          <header class="section-heading section-heading--compact">
-            <p class="eyebrow">Promo board</p>
-            <h2>A clearer combo board and stronger ordering flow.</h2>
-            <p>This second pass adds more of the fast-food homepage structure people expect: featured deals, pickup guidance, and a cleaner path from browsing to ordering.</p>
-          </header>
-
-          <div class="board-grid">
-            <article class="board-card board-card--hero">
-              <span class="board-card__label">Lunch rush</span>
-              <h3>2 tenders + fries + drink</h3>
-              <p>Built to be the quick decision item right near the top of the homepage.</p>
-              <div class="board-card__footer">
-                <span class="board-card__price">$9</span>
-                <span class="board-card__meta">Fast pickup favorite</span>
-              </div>
-            </article>
-
-            <article class="board-card">
-              <span class="board-card__label">Burger lane</span>
-              <h3>Double Pepper Burger Combo</h3>
-              <p>Double smashed patties, onions, sauce, fries, and a drink.</p>
-              <div class="board-card__footer">
-                <span class="board-card__price">$13</span>
-                <span class="board-card__meta">High-ticket combo</span>
-              </div>
-            </article>
-
-            <article class="board-card">
-              <span class="board-card__label">Late-night move</span>
-              <h3>Mixed Over Rice + Wings</h3>
-              <p>A heavier order for the late-night crowd with sauce on the side.</p>
-              <div class="board-card__footer">
-                <span class="board-card__price">$15</span>
-                <span class="board-card__meta">After-hours seller</span>
-              </div>
-            </article>
-
-            <article class="board-card">
-              <span class="board-card__label">Group order</span>
-              <h3>20 wing tray + large fries</h3>
-              <p>Easy upsell item for game nights, office lunches, and family orders.</p>
-              <div class="board-card__footer">
-                <span class="board-card__price">$24</span>
-                <span class="board-card__meta">Shareable add-on</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <aside class="service-panel" aria-label="Ordering services">
-          <article class="service-card service-card--accent">
-            <span class="service-card__label">Pickup</span>
-            <h3>Built for a fast handoff.</h3>
-            <p>Order flow is set up to favor quick pickup and easy combo decisions first.</p>
-          </article>
-
-          <article class="service-card">
-            <span class="service-card__label">Delivery</span>
-            <h3>DoorDash, Uber Eats, and direct links next.</h3>
-            <p>These slots are ready for the real platform links once they are live.</p>
-          </article>
-
-          <article class="service-card">
-            <span class="service-card__label">Group orders</span>
-            <h3>Trays, bundles, and office lunch drops.</h3>
-            <p>The site now has a cleaner place for bigger-ticket family and catering-style orders.</p>
-          </article>
         </aside>
       </div>
     </section>
 
-    <section class="heat-section" id="heat">
-      <div class="container heat-section__inner">
-        <div class="heat-section__copy">
-          <p class="eyebrow">Choose your pepper level</p>
-          <h2>The menu can stay family-friendly or push into real heat.</h2>
-          <p>Salt n Pepper is set up with an easy heat ladder so customers can order fast without needing to decode the menu.</p>
-        </div>
+    <section class="signatures" id="menu">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">Signature Plates</p>
+          <h2>Three anchors. Everything else orbits around them.</h2>
+          <p>A tighter menu presentation keeps the site feeling premium while still showing enough range to sell the concept.</p>
+        </header>
 
-        <div class="heat-grid">
-          <article class="heat-card">
-            <span class="heat-card__index">01</span>
-            <h3>Salt only</h3>
-            <p>All crunch, no burn. Good for kids and classic fried chicken orders.</p>
-          </article>
-
-          <article class="heat-card">
-            <span class="heat-card__index">02</span>
-            <h3>Black pepper</h3>
-            <p>Balanced seasoning with a little bite and a lot of flavor.</p>
-          </article>
-
-          <article class="heat-card">
-            <span class="heat-card__index">03</span>
-            <h3>Cayenne kick</h3>
-            <p>Warm heat for sandwiches, tenders, and loaded fries.</p>
-          </article>
-
-          <article class="heat-card">
-            <span class="heat-card__index">04</span>
-            <h3>After hours hot</h3>
-            <p>The late-night option for people who actually want the burn.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="story-section" id="story">
-      <div class="container story-section__inner">
-        <div class="story-section__copy">
-          <p class="eyebrow">Neighborhood feel</p>
-          <h2>Made for people who want flavor fast.</h2>
-          <p>Salt n Pepper keeps the menu broad where NYC customers expect it: chicken, burgers, over rice, wraps, wings, fries, shakes, and sauces. The layout is built to push people toward ordering without making the site feel heavy or corporate.</p>
-          <p>This first version gives you a strong visual direction to refine next with real menu photos, store details, and final ordering links.</p>
-        </div>
-
-        <div class="story-facts">
-          <article class="story-fact">
-            <span class="story-fact__label">Format</span>
-            <strong>Pickup, delivery, and dine-in ready</strong>
-          </article>
-
-          <article class="story-fact">
-            <span class="story-fact__label">Core menu</span>
-            <strong>Chicken, burgers, rice bowls, wraps, and sides</strong>
-          </article>
-
-          <article class="story-fact">
-            <span class="story-fact__label">Mood</span>
-            <strong>Loud color, clean ordering, late-night energy</strong>
-          </article>
-
-          <article class="story-fact">
-            <span class="story-fact__label">Domain</span>
-            <strong>saltnpeppernyc.com</strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="visit-section" id="visit">
-      <div class="container visit-section__inner">
-        <div class="visit-section__copy">
-          <p class="eyebrow">Visit and order</p>
-          <h2>More complete launch details, without locking final info yet.</h2>
-          <p>This section gives the homepage a more realistic restaurant shape while still keeping the details easy to swap once you have the final address, phone number, and delivery setup.</p>
-          <p class="visit-section__note">Draft hours below are for preview purposes and can be replaced as soon as the real store schedule is ready.</p>
-        </div>
-
-        <div class="visit-grid">
-          <article class="visit-card visit-card--accent">
-            <span class="visit-card__label">Flagship</span>
-            <h3>NYC storefront coming soon</h3>
-            <p>Address placeholder for now. The layout is ready for the full store address, phone, parking note, and map link.</p>
-          </article>
-
-          <article class="visit-card">
-            <span class="visit-card__label">Draft hours</span>
-            <ul class="hours-list">
-              <li><span>Mon - Thu</span><strong>11 AM - 1 AM</strong></li>
-              <li><span>Fri - Sat</span><strong>11 AM - 3 AM</strong></li>
-              <li><span>Sunday</span><strong>12 PM - 12 AM</strong></li>
-            </ul>
-          </article>
-
-          <article class="visit-card">
-            <span class="visit-card__label">Launch checklist</span>
-            <ul class="check-list">
-              <li>Add the real address and phone number</li>
-              <li>Plug in delivery platform URLs</li>
-              <li>Swap in actual menu photography</li>
-              <li>Decide final brand voice and copy</li>
-            </ul>
-          </article>
-
-          <article class="visit-card">
-            <span class="visit-card__label">Order channels</span>
-            <div class="channel-list">
-              <span>Website pickup</span>
-              <span>DoorDash</span>
-              <span>Uber Eats</span>
-              <span>Call ahead</span>
+        <div class="signature-grid">
+          <article class="dish-card">
+            <div class="dish-card__media">
+              <img src="images/pepper-royale.png" alt="Pepper Royale burger" loading="lazy">
             </div>
+            <span class="dish-card__index">01</span>
+            <h3>The Pepper Royale</h3>
+            <p>Double smashed beef, aged cheddar, confit onion, pepper aioli, pickles, and a glossy soft bun.</p>
+            <span class="dish-card__price">$18</span>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__media">
+              <img src="images/hot-honey-sando.png" alt="Hot Honey Sando" loading="lazy">
+            </div>
+            <span class="dish-card__index">02</span>
+            <h3>Hot Honey Sando</h3>
+            <p>Crisp halal chicken, saffron slaw, pickle ribbons, and hot honey laid over a toasted brioche bun.</p>
+            <span class="dish-card__price">$17</span>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__media">
+              <img src="images/saffron-fries.png" alt="Saffron fries" loading="lazy">
+            </div>
+            <span class="dish-card__index">03</span>
+            <h3>Midnight Saffron Fries</h3>
+            <p>Rosemary-salt fries with saffron butter, smoked chili, parmesan, and a charcoal aioli finish.</p>
+            <span class="dish-card__price">$11</span>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="order-section" id="order">
-      <div class="container order-section__inner">
-        <div class="order-card">
-          <p class="eyebrow">Opening soon in NYC</p>
-          <h2>Ready for the next round of real brand details.</h2>
-          <p>This starter page is ready for final menu photos, store address, phone number, delivery links, and the full launch copy once you want to tighten it up.</p>
+    <section class="menu-board" aria-labelledby="menu-board-title">
+      <div class="container">
+        <header class="section-heading section-heading--compact">
+          <p class="eyebrow">Curated Board</p>
+          <h2 id="menu-board-title">A cleaner menu with depth, not clutter.</h2>
+        </header>
 
-          <div class="order-card__actions">
-            <a class="button" href="mailto:hello@saltnpeppernyc.com?subject=Salt%20n%20Pepper%20opening%20updates">Email for updates</a>
-            <a class="button button--ghost" href="#menu">Review starter menu</a>
+        <div class="menu-board__grid">
+          <article class="menu-column">
+            <h3>Burgers</h3>
+            <ul class="menu-list">
+              <li><span>Pepper Royale</span><strong>$18</strong></li>
+              <li><span>House Cheeseburger</span><strong>$16</strong></li>
+              <li><span>Truffle Double Stack</span><strong>$21</strong></li>
+            </ul>
+          </article>
+
+          <article class="menu-column">
+            <h3>Chicken</h3>
+            <ul class="menu-list">
+              <li><span>Hot Honey Sando</span><strong>$17</strong></li>
+              <li><span>Black Pepper Tenders</span><strong>$15</strong></li>
+              <li><span>Midnight Wings</span><strong>$16</strong></li>
+            </ul>
+          </article>
+
+          <article class="menu-column">
+            <h3>Sides & Sweets</h3>
+            <ul class="menu-list">
+              <li><span>Midnight Saffron Fries</span><strong>$11</strong></li>
+              <li><span>Charred Corn Slaw</span><strong>$8</strong></li>
+              <li><span>Milk Tea Soft Serve</span><strong>$9</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container experience__inner">
+        <div class="experience__media">
+          <div class="experience-frame">
+            <img src="images/hot-honey-sando.png" alt="Premium hot honey chicken sandwich" loading="lazy">
+            <p class="experience-frame__note">Built for the dinner rush, the after-hours table, and the pickup order that still needs to arrive looking sharp.</p>
           </div>
         </div>
 
-        <div class="launch-list" aria-label="Next details to finalize">
-          <div class="launch-list__item">
-            <span>Next add</span>
-            <strong>Store address and hours</strong>
+        <div class="experience__content">
+          <p class="eyebrow">The Experience</p>
+          <h2>Low light, warm metal, and food that still knows how to show off.</h2>
+          <p>The new design direction borrows the energy of fast comfort food but tones down the noise. The result feels more like a modern grill with late-night swagger than a promo wall full of buttons.</p>
+
+          <div class="experience-cards">
+            <article class="experience-card">
+              <strong>Dining Mood</strong>
+              <span>Dark, warm, and polished without feeling formal.</span>
+            </article>
+            <article class="experience-card">
+              <strong>Pickup Flow</strong>
+              <span>Quick enough for the rush, still elevated in presentation.</span>
+            </article>
+            <article class="experience-card">
+              <strong>Menu Voice</strong>
+              <span>Shorter, sharper, and more premium than the first pass.</span>
+            </article>
           </div>
-          <div class="launch-list__item">
-            <span>Then add</span>
-            <strong>Real food photography</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="container visit__inner">
+        <div class="visit__content">
+          <p class="eyebrow">Visit</p>
+          <h2>Opening soon in New York City.</h2>
+          <p>The site now feels closer to a proper launch direction: premium visuals, tighter calls to action, and a stronger dining identity. Store address, final hours, and reservation or ordering links can drop into this layout cleanly when they are ready.</p>
+        </div>
+
+        <div class="visit__panel" aria-label="Opening details">
+          <div class="visit__row">
+            <span>Neighborhood</span>
+            <strong>New York City, exact location to follow</strong>
           </div>
-          <div class="launch-list__item">
-            <span>Then add</span>
-            <strong>Order links for pickup and delivery</strong>
+          <div class="visit__row">
+            <span>Hours</span>
+            <strong>Lunch to late night service</strong>
           </div>
-          <div class="launch-list__item">
-            <span>Built on</span>
-            <strong>Static HTML, CSS, and JavaScript</strong>
+          <div class="visit__row">
+            <span>Focus</span>
+            <strong>Premium burgers, hot chicken, fries, and shakes</strong>
+          </div>
+          <div class="visit__row">
+            <span>Website</span>
+            <strong>saltnpeppernyc.com</strong>
           </div>
         </div>
       </div>
@@ -543,15 +266,15 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div>
-        <p class="site-footer__brand">Salt n Pepper NYC</p>
-        <p class="site-footer__copy">Crispy chicken, burgers, rice bowls, and late-night fast food.</p>
+        <p class="site-footer__brand">Salt n Pepper</p>
+        <p class="site-footer__copy">Premium burgers, hot chicken, and late-night dining energy for New York City.</p>
       </div>
 
       <nav class="site-footer__nav" aria-label="Footer">
-        <a href="#home">Home</a>
+        <a href="#story">Story</a>
         <a href="#menu">Menu</a>
-        <a href="#heat">Heat</a>
-        <a href="#order">Order</a>
+        <a href="#experience">Experience</a>
+        <a href="#visit">Visit</a>
       </nav>
     </div>
 
