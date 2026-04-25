@@ -252,7 +252,7 @@ select {
 
 .hero__content {
   align-content: center;
-  max-width: 42rem;
+  max-width: 48rem;
 }
 
 .hero__inner {
@@ -260,7 +260,7 @@ select {
 }
 
 .hero h1 {
-  max-width: 8.2ch;
+  max-width: 11.4ch;
 }
 
 .hero__copy {
@@ -286,6 +286,7 @@ select {
 .experience h2,
 .visit h2 {
   font-size: clamp(2.7rem, 5.4vw, 4.8rem);
+  max-width: 13ch;
 }
 
 .hero__copy,
@@ -499,7 +500,7 @@ select {
 }
 
 .section-heading {
-  max-width: 50rem;
+  max-width: 58rem;
   margin-bottom: 1.5rem;
 }
 
@@ -746,6 +747,14 @@ select {
   .experience h2,
   .visit h2 {
     font-size: clamp(2.7rem, 10vw, 4.6rem);
+  }
+
+  .hero h1,
+  .story h2,
+  .section-heading h2,
+  .experience h2,
+  .visit h2 {
+    max-width: none;
   }
 
   .hero__art {
