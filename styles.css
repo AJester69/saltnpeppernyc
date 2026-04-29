@@ -15,6 +15,7 @@
   --paper: rgba(255, 255, 255, 0.76);
   --media-bg: #3c2419;
   --media-bg-strong: #6b402b;
+  --display-font: "Bangers", sans-serif;
   --radius-xl: 42px;
   --radius-lg: 30px;
   --radius-md: 22px;
@@ -131,7 +132,7 @@ select {
   border: 1px solid rgba(197, 93, 71, 0.18);
   background: linear-gradient(145deg, rgba(231, 163, 58, 0.22), rgba(255, 255, 255, 0.78));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.92);
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--gold-strong);
@@ -145,10 +146,11 @@ select {
 .brand__name,
 .site-footer__brand {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  line-height: 1;
+  letter-spacing: 0.03em;
 }
 
 .brand__meta {
@@ -276,11 +278,11 @@ select {
 .experience h2,
 .visit h2 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: clamp(3.4rem, 7.2vw, 6.7rem);
-  line-height: 0.95;
+  line-height: 0.98;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
   text-wrap: balance;
 }
 
@@ -376,7 +378,7 @@ select {
 .hero__fact strong,
 .hero__fact strong a {
   color: var(--text);
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 1.45rem;
   line-height: 1.05;
   font-weight: 600;
@@ -404,7 +406,7 @@ select {
 }
 
 .metric-card strong {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 1.45rem;
   font-weight: 700;
 }
@@ -580,7 +582,7 @@ select {
 .dish-card h3,
 .menu-column h3 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 2rem;
   font-weight: 700;
 }
@@ -683,7 +685,7 @@ select {
 
 .menu-list strong,
 .visit__row strong {
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 1.45rem;
   line-height: 1;
   color: var(--gold-strong);
@@ -718,7 +720,7 @@ select {
   border-radius: 999px;
   background: rgba(197, 93, 71, 0.14);
   color: var(--gold-strong);
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -750,7 +752,7 @@ select {
 
 .combo-note strong {
   color: var(--gold-strong);
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--display-font);
   font-size: 1.35rem;
   font-weight: 700;
 }
